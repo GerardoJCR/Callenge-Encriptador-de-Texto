@@ -1,6 +1,30 @@
 *{
     padding: 0;
     margin: 0;
+    /* background-color: black;
+    color: white; */
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between; /*Esto me ayudara a separar los contenedores*/
+    align-items: flex-start;
+}
+
+.contenedor__entrada, .salida{
+    flex: 1; /*Ambos ocuparan el mismo espacio*/
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contenedor__entrada textarea, .contenedor__salida textarea{
+    width: 80%;
+    height: 200px;
+    resize: none; /*Evitamos redimensionamiento del textarea*/
+}
+
+footer{
+    text-align: center;
 }
 
 
