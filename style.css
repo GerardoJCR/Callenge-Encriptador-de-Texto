@@ -4,7 +4,9 @@
     /* background-color: black;
     color: white; */
 }
-
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
 .contenedor {
     display: flex;
     justify-content: space-between; /*Esto me ayudara a separar los contenedores*/

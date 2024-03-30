@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     
@@ -16,12 +17,12 @@
                 
                 <div class="contenedor__entrada">
                     <textarea  id="entrada-input" placeholder="Ingrese su texto aqui..."></textarea>
-                    <button onclick="encriptar();">Encriptar</button>
-                    <button onclick="desencriptar();">Desencriptar</button>
+                    <button onclick="btnEncriptar();">Encriptar</button>
+                    <button onclick="btnDesencriptar();">Desencriptar</button>
                 </div>
                 <div class="contenedor__salida">
                     <textarea  id="salida-input" placeholder="Texto Encriptado"></textarea>
-                    <button onclick="copiar();">Copiar</button>
+                    <button onclick="btncopiar();" id="copiar-salida">Copiar</button>
                 </div>
 
             </div>
