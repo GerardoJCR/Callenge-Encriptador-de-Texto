@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador de Texto</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="VIDEO/fondodesktop.mp4" type="video/mp4" />
+    </video>
 
+    <header class="container-header">
+      <a href="/">
+        <img src="IMG/alura.png" alt="" height="100px" />
+      </a>
+      <h1>ENCRIPTADOR DE TEXTO</h1>
+    </header>
+    <section class="contenedor">
+      <div class="contenedor__entrada">
+        <div class="contenedor-label">
+          <label for="entrada-input">
+            ⚠ Ingrese solo letras minusculas y sin acentos
+          </label>
+        </div>
+        <textarea
+          class="textarea-entrada"
+          id="entrada-input"
+          placeholder="INGRESE TEXTO AQUI"
+        ></textarea>
 
+        <div class="botones-entrada">
+          <button class="button-entrada" onclick="btnEncriptar();">
+            ENCRIPTAR
+          </button>
+          <button class="button-entrada" onclick="btnDesencriptar();">
+            DESENCRIPTAR
+          </button>
+        </div>
+      </div>
 
+      <div class="contenedor__salida">
+        <textarea
+          class="textarea-salida"
+          id="salida-input"
+          placeholder="NO se ha ingresado ningún texto, intente de nuevo"
+          readonly
+        ></textarea>
+        <div class="botones-salida">
+          <button
+            class="button-salida"
+            onclick="btncopiar();"
+            id="copiar-salida"
+          >
+            COPIAR TEXTO
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-flex">
+        <div class="icons">
+          <a href="https://github.com/GerardoJCR" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/gerardo-josias-chevarria-rodriguez/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+        <p>Hecho por Gerardo Chevarria</p>
+      </div>
+    </footer>
 
-    <script src="javascript.js"> </script>
-</body>
+    <script src="javascript.js"></script>
+  </body>
 </html>
